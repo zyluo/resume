@@ -1,0 +1,198 @@
+% LaTeX resume using res.cls
+\documentclass[line,margin]{res}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks, linkcolor=red
+}
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document}
+
+\name{Luo, Zhong Yue}
+% \address used twice to have two lines of address
+\address{lzyeval@gmail.com}
+\address{(+86) 18618475732}
+
+\begin{resume}
+
+\section{SUMMARY}    \begin{description}
+                     \item[Contribution] \hfill \\
+                     Contributor to open source projects of virtualization, virtual networking, object storage, and
+                     authentication.
+                     \item[Interest] \hfill \\
+                     In-depth understanding of distributed computing application processes and
+                     technology data integration challenges.
+                     \item[Experience] \hfill \\
+                     Experience with full life-cycle development,
+                     from gathering and writing technical requirements to performing application development.
+                     \item[Specialties] \hfill \\
+                     Experienced in creating applications in Python with open source frameworks, and SQL/NoSQL/Graph Databases.
+                     \item[Linguistics] \hfill \\
+                     Fluent in English, Chinese and Korean.
+                     \item[Reference] \hfill
+                        \begin{itemize}  \itemsep -2pt % reduce space between items
+                            \item \href{http://cn.linkedin.com/in/lzyeval}{LinkedIn}
+                            \item \href{http://github.com/lzyeval}{GitHub}
+                            \item \href{http://bitbucket.org/lzyeval}{BitBucket}
+                            \item \href{http://launchpad.net/~lzyeval}{LaunchPad}
+                            \item \href{http://www.codechef.com/users/cynah}{CodeChef}
+                        \end{itemize}
+                     \end{description}
+
+\section{EXPERIENCE} {\sl Sina Corporation, Beijing, China} \hfill Nov. 2011 - Current \\
+                     Software Engineer \\
+                     Full-time contributor to OpenStack projects.
+                     \begin{itemize}  \itemsep 2pt % reduce space between items
+                     \item Keep track of daily source code changes and submit \href{http://bitly.com/y9yqm0}{bug fixes}.
+                     \item Upgrade staging and production environment for each minor and major release.
+                     \item Gave a presentation about OpenStack Nova source code hacking at
+                           \href{http://bitly.com/wnDSHV}{COSUG 2012} conference in Shanghai.
+                     \item IaaS billing system. \\ Billing system for public cloud services.
+                           \begin{itemize}
+                               \item Python 2.7.2, ZeroMQ 2.1.11, Cassandra 1.0.8, pycassa 1.5.1
+                           \end{itemize}
+                     \item \href{http://github.com/lzyeval/kanyun}{Kanyun} \\ Public/Private cloud monitoring system.
+                           \begin{itemize}
+                               \item Python 2.7.2, ZeroMQ 2.1.11, Cassandra 1.0.8, pycassa 1.5.1, LibVirt 0.8.8
+                           \end{itemize}
+                     \item \href{http://github.com/lzyeval/demux}{Demux} \\ Distributed messaging system.
+                           \begin{itemize}
+                               \item Python 2.7.2, ZeroMQ 2.1.11
+                           \end{itemize}
+                     \end{itemize}
+
+                     {\sl Enswers Inc., Seoul, Korea} \hfill Jan. 2009 - Apr. 2011 \\
+                     Software Engineer \\
+                     Developed copyright filtering, video statistics tracking,
+                     and video search applications of online videos using video fingerprint technology.
+                     \begin{itemize}  \itemsep 2pt % reduce space between items
+                     \item Video clustering system \\ A system which clusters a newly crawled video with archived videos
+                                                      by dispatching jobs to multiple workers.
+                           \begin{itemize}
+                               \item Server / client architecture implemented with Twisted Perspective Broker.
+                               \item Compares 250,000+ videos per day on 17 servers.
+                               \item Python 2.6.6, Twisted 10.2.0.
+                           \end{itemize}
+                     \item MapReduce Platform admin \\ Installed Disco map/reduce platform for heavy computation tasks.
+                               \begin{itemize}
+                                   \item Disco 0.3.2
+                               \end{itemize}
+                     \item BOINC Video Download System \\ Utilized the BOINC platform to aggressively download videos
+                                                          from YouTube.
+                     \begin{itemize}
+                         \item Downloads 250,000+ videos per day.
+                         \item Client developed in Python to work in Windows environment.
+                         \item BOINC 6.10.58
+                     \end{itemize}
+
+                     \item Back office web application \\ A Web application to visualize crawled videos and its metadata.
+                     \begin{itemize}
+                         \item jQuery front-end with Tornado web framework.
+                         \item Python 2.6.6, MySQL 5.1, SQLAlchemy 0.6.5, pycassa 1.0.4, jQuery 1.4.2, Tornado 1.1.
+                     \end{itemize}
+    
+                     \item Cassandra cluster admin \\ Adapted Cassandra to existing system
+                                                      to resolve high maintenance overhead of MySQL.
+                     \begin{itemize}
+                         \item Used Fabric for deployment, configuration, and monitoring.
+                         \item Cassandra 0.6.5, Cassandra 0.7.0, Fabric 0.9.0.
+                     \end{itemize}
+
+                     \item  Search engine development \\ Customized Sphinx search engine logic.
+                     \begin{itemize}
+                         \item Sphinx 0.9.9.
+                     \end{itemize}
+
+                     \item Content Copyright Policy Notification \\ Content information notification system.
+                     \begin{itemize}
+                         \item Implemented in twisted. Two servers for distribution and replication.
+                         \item Monitoring back office system made with jQuery and webpy.
+                         \item Python 2.5.2, SQLAlchemy 0.5.6, jQuery 1.4.2, Webpy 0.3.2, Twisted 2.5.0.
+                     \end{itemize}
+
+                     \item Video Download Revenue Logger \\ Video content purchase transaction log system.
+                     \begin{itemize}
+                         \item Log server implemented with ws-xmlrpc in JAVA. Runs on Tomcat.
+                         \item Handles 400,000+ requests per day on two servers balanced with LVS.
+                         \item Java 1.6.0\_22, ws-xmlrpc 3.1.2, Tomcat 6.0.
+                     \end{itemize}
+                     \end{itemize}
+                    
+                     {\sl Semantic Web Research Center, Daejeon, Korea} \hfill May. 2007 - Jan. 2009 \\
+                     Junior Researcher \\
+                     Research on Natural language Processing approached Ontology
+                     \begin{itemize}  \itemsep 2pt % reduce space between items
+                     \item Annotation Workbench \\ A system which feeds sentences for annotation.
+                                                     Provides sentences from documents which are most relevant with
+                                                     the domain the annotator is accommodated with.
+                           \begin{itemize}
+                               \item Wikipedia documents used as corpus, downloaded from
+                                     \href{http://dumps.wikimedia.org/backup-index.html}{Wikipedia archive}.
+                               \item Clustered Wikipedia documents, mapped the clusters to a domain,
+                                     and calculated similarity distances between clusters.
+                               \item Built system in JAVA, used GWT for demo webpage.
+                               \item Used Treemap to visualize annotation progress of each domain.
+                           \end{itemize}
+                    \end{itemize}
+                    
+                    \begin{itemize}  \itemsep 2pt % reduce space between items
+                     \item Named entity relation \\ Visualization of named entity relations extracted from Wikipedia.
+                           \begin{itemize}
+                               \item Used the Thinkmap SDK for visualization.
+                           \end{itemize}
+                    \end{itemize}
+                    \begin{itemize}  \itemsep 2pt % reduce space between items
+                     \item  RDF storage backend \\ The logical expressions extracted from sentences were stored in RDF format.
+                           \begin{itemize}
+                               \item AllegroGraph was used for graph storage.
+                           \end{itemize}
+                    \end{itemize}
+
+\section{EDUCATION} {\sl KAIST, Daejeon, Korea} \hfill Feb. 2007 - Feb. 2009 \\
+                    M.S., Computer Science
+                    \begin{description}   \itemsep 2pt % reduce space between items
+                           \item[Major] \hfill \\ Natural Language Processing approached Ontology
+                           \item[Thesis] \hfill \\
+                           {\it ``Document Sequencing for Text Annotation Bootstrapping Toward Ontologization
+                                  in Relatively Closed Document Space''}
+                    \end{description}
+                    {\sl Hanyang University, Seoul, Korea} \hfill Feb. 1999 - Feb. 2007 \\
+                    B.S., Mathematics and Computer Science
+
+\section{EXTRA-CURRICULAR \\ ACTIVITIES}
+Lived 9 years in Boston, Massachusetts \hfill Age 2 to 11. \\
+Discharged as sergeant from the 51 Division 169 Battalion \hfill Jun. 2000 - Aug. 2002 \\
+Went through a Chinese language course in BIEM, Beijing \hfill Aug. 2002 - Dec. 2003 \\
+
+
+\section{PROJECT DESCRIPTION} \begin{description}
+                              \item[Video clustering system] \hfill \\
+                              The video crawler gathers 250 - 300k videos daily. To compare each video to another will have an complexity of $O(n^2)$, which is not feasible for service. Fortunately, popular videos hit its view count peak in the first three days of upload, which concurs that important videos get uploaded simultaneously during a short period of time.\\
+                 I built a system which compares a newly crawled video with the archived videos in a three day time-frame. The client distributes jobs to servers which store videos fingerprints of similar runtime. The video fingerprints are byte stream accumulated in a memory mapped file.
+                              \item[BOINC Video Download System] \hfill \\
+                YouTube and Pandora TV blocks IP addresses of computers if accessed frequently. To avoid this, our team devised a distributed video download system using BOINC. I implemented the job scheduler to avoid a client be assigned with the same site consecutively.
+                              \item[Cassandra cluster admin] \hfill \\
+                MySQL became a bottle neck to the system once the number of crawled videos passed 100M. To solve the problems with MySQL, I adopted Cassandra to our system. Currently I am running a cluster of 31 Cassandra 0.7.0 servers with a 2TB disk and 20G of Java heap space.
+                              \item[Search engine development] \hfill \\
+                The search team, consisted of three members, built a video search application which shows clustered videos as search results.\\
+                 I was in charge of building the indices for the search engine. The attributes I used were video title, video post date, site info, and runtime which we crawled along with the video itself. Additionally, we used cluster size, shared count, total view count which were results from the clustering system. An index is a XML document of video attributes grouped by similar language and site info.\\
+                 I also implemented some of the custom search functions. Search functions are different for each query as queries are classified into domains. The search function for music domain has a bigger priority on shared count and cluster size to hide UGCs and expose official releases. News and Sports domains put emphasis on video post date, site info, and video runtime to only show videos of certain length from selected websites.
+                              \item[Content Copyright Policy Notification] \hfill \\
+                Korea has 120 webhard companies which users use to share files via broadband connection. Enswers provide a copyright filtering API to webhard companies which is used to block or charge payment to copyright contents. The decision to whether block or charge a content is chosen by content providers - film makers, broadcasting stations, etc. Whenever a content providers changes a policy or price of a content towards Enswers, we notify the incident to all webhard companies.\\
+                 The notification system I made serves information to 86 webhard companies. Information is transmitted via XML format. Failure notification, client monitoring, log browsing, and manual execution are some of the additional functionalities.
+                              \item[Video Download Revenue Logger] \hfill \\
+                Contents purchased from webhard companies are informed to Enswers. I chose XML-RPC as the protocol since the format of the purchase data is critical.
+\item[Annotation Workbench] \hfill \\
+ The research topic at SWRC was to find a mapping from natural language sentences to logical expressions. In the early stages of research, each sentence was annotated manually to find patterns between nouns according to grammatical patterns. \\ My research area included an implementation of a workbench which could 1) provide the annotator with a sequence of sentences which had meaningful information, 2) automatically annotate existing patterns to a new sentence, and 3) add/edit new annotation patterns to a sentence.
+\end{description}
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
